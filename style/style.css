@@ -59,6 +59,10 @@ nav h1{
     transform: translate(0px,400.75px);
 }
 
+.transform-duration{
+    transition-duration: 300ms;
+}
+
 ul{
     display: flex;
     flex-direction: column;

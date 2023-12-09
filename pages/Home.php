@@ -92,7 +92,7 @@
     <nav>
         <h1>Menu Apotek</h1>   
         <div class="line"></div>     
-        <div id="activeLine" class="a-line hidden"></div>
+        <div id="activeLine" class="a-line hidden transform-duration "></div>
         <ul>
             <li id="jualObat">Jual Obat</li>
             <li id="beliObat">Beli Obat</li>

@@ -20,46 +20,68 @@
             $("#menuRacikObat").addClass("hidden");
             $("#menuHistoryLog").addClass("hidden");
             $("#menuSync").addClass("hidden");
+            resetPositionActiveLine()
+        }
+
+        function resetPositionActiveLine(){
+            $("#activeLine").removeClass("line-1");
+            $("#activeLine").removeClass("line-2");
+            $("#activeLine").removeClass("line-3");
+            $("#activeLine").removeClass("line-4");
+            $("#activeLine").removeClass("line-5");
+            $("#activeLine").removeClass("line-6");
+            $("#activeLine").removeClass("line-7");
+            $("#activeLine").removeClass("line-8");
+            $("#activeLine").removeClass("line-9");
+            $("#activeLine").removeClass("hidden");
         }
 
         $("#jualObat").click(function(){
             addHidden()
             $("#menuJualObat").toggleClass("hidden");
+            $("#activeLine").addClass("line-1");
         })
 
         $("#beliObat").click(function(){
             addHidden()
             $("#menuBeliObat").toggleClass("hidden");
+            $("#activeLine").addClass("line-2");
         })
 
         $("#requestObat").click(function(){
             addHidden()
             $("#menuRequestObat").toggleClass("hidden");
+            $("#activeLine").addClass("line-3");
         })
 
         $("#cekInventorySendiri").click(function(){
             addHidden()
             $("#menuCekInventorySendiri").toggleClass("hidden");
+            $("#activeLine").addClass("line-4");
         })
         
         $("#cekInventoryLain").click(function(){
             addHidden()
             $("#menuCekInventoryLain").toggleClass("hidden");
+            $("#activeLine").addClass("line-5");
         })
         
         $("#racikObat").click(function(){
             addHidden()
             $("#menuRacikObat").toggleClass("hidden");
+            $("#activeLine").addClass("line-6");
         })
         
         $("#historyLog").click(function(){
             addHidden()
             $("#menuHistoryLog").toggleClass("hidden");
+            $("#activeLine").addClass("line-7");
         })
         
         $("#sync").click(function(){
             addHidden()
             $("#menuSync").toggleClass("hidden");
+            $("#activeLine").addClass("line-8");
         })
     });
 
@@ -68,7 +90,9 @@
 </script>
 <body>
     <nav>
-        <h1>Menu Apotek</h1>
+        <h1>Menu Apotek</h1>   
+        <div class="line"></div>     
+        <div id="activeLine" class="a-line hidden"></div>
         <ul>
             <li id="jualObat">Jual Obat</li>
             <li id="beliObat">Beli Obat</li>
@@ -79,6 +103,7 @@
             <li id="historyLog">History Log</li>
             <li id="sync">Sync</li>
         </ul>
+
     </nav>
 
     <section class="hidden" id="menuJualObat">
@@ -100,7 +125,21 @@
         <h1>Racik Obat</h1>
     </section>
     <section class="hidden" id="menuHistoryLog">
-        <h1>History Log</h1>
+        <div>
+            <h1>History Log</h1>
+            <table border="1px black">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>isi tanggal</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
     <section class="hidden" id="menuSync">
         <h1>Sync</h1>

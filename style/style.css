@@ -1,26 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 body{
     display: flex;
     flex-direction: row;
     border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav{
+    border-right: 3px solid black;
+    padding-right: 20px;
 }
 
 nav h1{
     border: 1px solid black;
     text-align: center;
 }
+.line{
+    border: 2px solid black;   
+    position: absolute;
+    height: 450px;
+    width: 0px;
+    left: 30px;
+}
+.a-line{
+    border: 2px solid green;   
+    position: absolute;
+    height: 50px;
+    width: 0px;
+    left: 40px;
+}
+
+.line-1{
+    transform: translate(0px,0px);
+}
+.line-2{
+    transform: translate(0px,57.25px);
+}
+.line-3{
+    transform: translate(0px,114.5px);
+}
+.line-4{
+    transform: translate(0px,171.75px);
+}
+.line-5{
+    transform: translate(0px,229px);
+}
+.line-6{
+    transform: translate(0px,286.25px);
+}
+.line-7{
+    transform: translate(0px,343.5px);
+}
+.line-8{
+    transform: translate(0px,400.75px);
+}
 
 ul{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     justify-content: center;
+    padding-left: 30px;
 }
 
 li{
     list-style: none;
-    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    padding: 19px 5px;
     border-radius: 0.75em;
-    padding: 15px 10px;
 }
 
 .hidden{
@@ -30,4 +81,5 @@ li{
 section{
     display: flex;
     justify-content: center;
+    padding-left: 20px;
 }

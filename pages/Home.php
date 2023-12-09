@@ -142,7 +142,10 @@
         </div>
     </section>
     <section class="hidden" id="menuSync">
-        <h1>Sync</h1>
+        <div>
+            <h1>Sync</h1>
+            <button>Sync Button</button>
+        </div>
     </section>
 </body>
 </html>

@@ -116,10 +116,40 @@
         <h1>Request Obat</h1>
     </section>
     <section class="hidden" id="menuCekInventorySendiri">
-        <h1>My Inventory</h1>
+        <div>
+            <h1>Inventory Toko Ini</h1>
+            <table border="1px black">
+                <thead>
+                    <tr>
+                        <th>Nama Barang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Namanya</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
     <section class="hidden" id="menuCekInventoryLain">
-        <h1>Inventory Lain</h1>
+        <div>
+            <h1>Inventory Toko Lain</h1>
+            <button>Toko 1</button>
+            <button>Toko 2</button>
+            <table border="1px black">
+                <thead>
+                    <tr>
+                        <th>Nama Barang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Namanya</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
     <section class="hidden" id="menuRacikObat">
         <h1>Racik Obat</h1>
